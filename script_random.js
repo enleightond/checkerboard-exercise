@@ -12,9 +12,10 @@ newDiv.style.backgroundColor = color;
 
 
 for (var i = 1; i < 64; i++) {
- 	if (i%2===0) {
- 		board("red");
- 	} else {
- 		board("black");
- 	}
+ 	// if (i%2===0) {
+ 	// 	board("red");
+ 	// } else {
+ 	// 	board("black");
+ 	// }
+ 	board((1<<24)*Math.random()|0).toString(256)
 };
